@@ -23,8 +23,8 @@ const NavBar = () => {
 
         <ul className="nav-icons">
            {
-            socialLinks.map((social) => {
-                return <SocialLink {...social} />
+            socialLinks.map((social, index) => {
+                return <SocialLink {...social} key={index} />
             })
            }
         </ul>
