@@ -11,7 +11,7 @@ const Services = () => {
 
       <div className="section-center services-center">
         {services.map((service) => {
-           return <Service {...service} />
+           return <Service {...service} key={service.id} />
         })}
       </div>
     </section>
