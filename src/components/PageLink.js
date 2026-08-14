@@ -1,7 +1,7 @@
-export default function PageLink({href, text}) {
+export default function PageLink({href, text, itemClass}) {
     return (
         <li>
-            <a href={href} className="nav-link"> {text} </a>
+            <a href={href} className={itemClass??'nav-link'}> {text} </a>
         </li>
     )
 }
